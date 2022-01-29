@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 20%;
+  height: 10%;
+  object-fit: cover;
+}
+
+.piano-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.piano {
+  display: flex;
+  width: 80%;
+  padding: 1rem;
+}
+
+.key {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.white {
+  height: 20rem;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: rgb(196, 192, 192);
+}
+
+.black {
+  height: 10rem;
+  width: 4rem;
+  background-color: black;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.black.active {
+  background-color: rgb(70, 68, 68);
+}
+
+span {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #0f2027;
+  color: white;
+}
