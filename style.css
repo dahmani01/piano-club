@@ -104,61 +104,69 @@ footer {
   color: white;
 }
 
-
-@media screen and (max-width :1280px ) {
-
-  span{
+@media screen and (max-width: 1280px) {
+  span {
     font-size: 1.5rem;
   }
-
 }
 
-@media screen and (max-width :980px ) {
-
-  span{
+@media screen and (max-width: 980px) {
+  span {
     font-size: 1rem;
   }
-  .white{
+  .white {
     height: 15rem;
   }
-
-}
-
-@media screen and (max-width :750px ) {
-
-  .piano{
+  .piano {
     width: 100%;
+    padding: 0.5rem;
   }
-
- footer{
-   font-size: 0.7rem;
- }
-
 }
 
-@media screen and (max-width :570px ) {
-
-  
- .white{
-   height: 10rem;
- }
- span{
-   font-size: 0.7rem;
- }
-
-}
-
-@media screen and (max-width :410px ) {
-
-  
-  .white{
-    height: 10rem;
-  }
-  span{
+@media screen and (max-width: 750px) {
+  footer {
     font-size: 0.7rem;
   }
- .black{
+}
 
-   width: 40%;
- }
- }
+@media screen and (max-width: 570px) {
+  .white {
+    height: 10rem;
+  }
+  span {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  span {
+    font-size: 0.5rem;
+  }
+  .key {
+    padding: 0;
+  }
+  .black {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .white {
+    height: 7rem;
+  }
+  .black {
+    width: 50%;
+  }
+  .key {
+    padding: 0;
+  }
+  .piano {
+    padding: 0.1rem;
+  }
+  span {
+    font-size: 0.5rem;
+  }
+  footer {
+    font-size: 0.5rem;
+  }
+}
